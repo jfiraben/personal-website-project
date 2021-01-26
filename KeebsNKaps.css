@@ -1,0 +1,322 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		4;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;        
+}
+
+/* Mobile Layout: 480px and below. */
+  
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 86.45%;
+	padding-left: 2.275%;
+	padding-right: 2.275%;
+	clear: none;
+	float: none;
+}
+#div1 {
+}
+.nav_bar {
+	text-align: center;
+	background-color: #29B6C5;
+	background-image: none;
+	color: #C1C1C1;
+	width: 100%;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+.gridContainer.clearfix #div1 h1 {
+	width: 100%;
+	text-align: center;
+	background-color: #C1C1C1;
+}
+
+.zeroMargin_mobile {
+margin-left: 0;
+}
+.hide_mobile {
+display: none;
+}
+.nav_bar ul li a  {
+	width: 100%;
+	text-decoration: none;
+	padding-left: 1%;
+	padding-right: 1%;
+	margin-left: .25%;
+	margin-right: .25%;
+	color: #000000;
+	background-color: #29B6C5;
+	font-size: large;
+	border-radius: 5px;
+}
+li {
+	display: inline;
+}
+#logo a img {
+	float: left;
+}
+#logoTitle h2 {
+	float: right;
+	font-size: 3em;
+	overflow-x: auto;
+}
+.gridContainer.clearfix #logoTitle {
+	padding-bottom: 8pt;
+	background-color: #C1C1C1;
+}
+
+body {
+	background-color: #DADADA;
+}
+#div1 #movie #flashMovie {
+	display: inline;
+	background-color: #C1C1C1;
+	width: 100%;
+	float: right;
+}
+#movie {
+	margin-bottom: 1%;	
+}
+#movie #flashMovie #FlashID {
+	display: inherit;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	float: none;
+	width: 100%;
+}
+
+#movie #flashMovie #movieText {
+	display: inline;
+	float: left;
+	text-align: left;
+}
+
+.gridContainer.clearfix #footer {
+	background-color: #C1C1C1;
+	width: 100%;
+	min-height: 100%;
+	clear: both;
+	z-index: 10;
+	margin-top: -3em;
+	position: relative;
+	font-size: 1em;
+}
+.gridContainer.clearfix #sampleItems {
+	background-color: #C1C1C1;
+	padding-top: 1em;
+	padding-bottom: 4em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.gridContainer .clearfix .contactUs {
+	background-color: #C1C1C1;
+	padding-top: 4em;
+	padding-bottom: 4em;
+	padding-right: 4em;
+	padding-left: 4em;
+	max-width: 100%;
+	margin-top: 0.5em;	
+}
+.gridContainer.clearfix .best_sellers {
+	display: flex;
+	background-color: #C1C1C1;
+	padding-top: 4em;
+	padding-bottom: 4em;
+	padding-right: 4em;
+	padding-left: 4em;
+	max-width: 100%;
+	margin-top: 0.5em;
+	margin-bottom: 55px;
+	flex-wrap: wrap;
+}
+.gridContainer.clearfix .best_sellers h2 {
+	max-width: 100%;
+	width: 100%;
+	font-size: xx-large;
+}
+.product_image a img {
+	max-width: 100%;
+	padding-top: 1em;
+	padding-right: 1em;
+	padding-bottom: 1em;
+	display: flex;
+}
+.gridContainer.clearfix #footer .contentParagraphs {
+	color: #FF0004;
+}
+.gridContainer.clearfix #footer .contentParagraphs {
+	font-size: 0.75em;
+
+}
+.product_image a img {
+	max-width: 100%;
+}
+#siteMap {
+	background-color: #C1C1C1;
+	margin-bottom: 1%;
+}
+#siteMap ul li {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	text-decoration: none;
+	padding-left: 2%;
+	padding-right: 2%;
+	color: #000000;
+}
+.gridContainer.clearfix .contactUs form {
+	max-width: 100%;
+	max-height: 100%;
+	margin-top: 113px;
+	margin-bottom: 55px;
+	background-color: #C1C1C1;
+	padding-right: 2%;
+	padding-left: 2%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+#div1 #movie iframe {
+	max-width: 100%;
+	width: 50%;
+}
+#siteMap ul ul {
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+#div1 #movie img {
+	max-width: 100%;
+	width: 50%;
+	float: none;
+	padding-top: 1%;
+	padding-right: 1%;
+	padding-bottom: 1%;
+	padding-left: 1%;
+	max-height: 100%;
+	display: inline-block;
+	height: 50%;
+}
+#intro_text ul li {
+	max-width: 100%;
+	width: 50%;
+	float: none;
+}
+.gridContainer.clearfix .fluid.nav_bar ul {
+	background-color: #C1C1C1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+
+.gridContainer {
+	max-width: 100%;
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#div1 {
+	max-width: 100%;
+}
+.nav_bar {
+	max-width: 100%;
+}
+.hide_tablet {
+display: none;
+}
+.zeroMargin_tablet {
+margin-left: 0;
+}
+
+
+
+
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+
+.gridContainer {
+	max-width: 100%;
+	width: 88.5%;
+	max-width: 1232px;
+	padding-left: 0.75%;
+	padding-right: 0.75%;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#div1 {
+	max-width: 100%;
+}
+.nav_bar {
+	max-width: 100%;
+}
+.zeroMargin_desktop {
+margin-left: 0;
+}
+.hide_desktop {
+display: none;
+}
+
+
+}
